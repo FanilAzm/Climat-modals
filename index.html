@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
+		<link rel="stylesheet" type="text/css" href="static/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+  </head>
+  <body>
+		<!--  -->
+		<button class="btn-popup boiler">
+			<img src="./static/img/carbon_calculator.png" alt="Калькулятор">
+			<span>Расчет котла</span>
+		</button>
+		<button class="btn-popup air-conditioning">
+			<img src="./static/img/carbon_calculator.png" alt="Калькулятор">
+			<span>Расчет кондиционера</span>
+		</button>
+		<button class="btn-popup ventilation">
+			<img src="./static/img/carbon_calculator.png" alt="Калькулятор">
+			<span>Расчет вентиляции</span>
+		</button>
+		<!--  -->
+    <div class="popup boiler-popup">
+			<div class="popup__content">
+				<div class="popup-close"></div>
+				<div class="count__slider">
+					<span class="cp">1</span>
+				</div>
+				<div class="popup-slider__prev boiler-slider__prev"><img src="./static/img/prev-arrow.png" alt="Назад"></div>
+				<div class="popup-slider__next boiler-slider__next"></div>
+				<p class="popup-title">Расчет котла</p>
+				<div class="popup-slider boiler-slider">
+					<form class="popup-slide">
+						<div class="popup-slide__content">
+							<div class="popup-slide__block">
+								<p class="popup-slide__title">Вид топлива</p>
+								<label class="form-checkbox">газ
+									<input type="checkbox" />
+									<span class="custom__checkbox" id="gas"></span>
+								</label>
+								<label class="form-checkbox">дизель
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">комбинированный
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">дрова/уголь
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">электричество
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+							</div>
+							<div class="popup-slide__block gas-content">
+								<p class="popup-slide__title">Камера сгорания</p>
+								<label class="form-checkbox">открытая
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">закрытая
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+							</div>
+						</div>
+					</form>
+					<form class="popup-slide">
+						<p class="popup-slide__title">Укажите площадь отопления, м2</p>
+						<input type="text" class="form-input">
+					</form>
+					<form class="popup-slide">
+						<p class="popup-slide__title">Тип установки котла</p>
+						<div class="popup-slide__content">
+							<div class="popup-slide__block">
+								<label class="form-checkbox">напольный
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">настенный
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">не знаю
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+							</div>
+							<div class="popup-slide__block">
+								<label class="form-checkbox">одноконтурный
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">двухконтурный
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">не знаю
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+							</div>
+						</div>
+					</form>
+					<form class="popup-slide">
+						<p class="popup-slide__title">Оставьте свои контактные данные</p>
+						<div class="form-box">
+							<label for="phone">*Телефон:</label>
+							<input type="text" class="form-input" name="phone" required>
+						</div>
+						<div class="form-box">
+							<label for="email">E-mail:</label>
+							<input type="text" class="form-input" name="email">
+						</div>
+						<div class="form-box">
+							<label for="text">Комментарий:</label>
+							<input type="text" class="form-input" name="text">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="popup air-conditioning-popup">
+			<div class="popup__content">
+				<div class="popup-close"></div>
+				<div class="count__slider">
+					<span class="cp">1</span>
+				</div>
+				<div class="popup-slider__prev air-conditioning-slider__prev"><img src="./static/img/prev-arrow.png" alt="Назад"></div>
+				<div class="popup-slider__next air-conditioning-slider__next"></div>
+				<p class="popup-title">Расчет кондиционера</p>
+				<div class="popup-slider air-conditioning-slider">
+					<form class="popup-slide">
+						<div class="popup-slide__content">
+							<div class="popup-slide__block">
+								<p class="popup-slide__title">Укажите количество людей в помещении</p>
+								<label class="form-checkbox">от 1 до 10
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">от 10 до 20
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">от 20 до 30
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">от 30 и более
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+							</div>
+						</div>
+					</form>
+					<form class="popup-slide">
+						<div class="popup-slide__block">
+							<p class="popup-slide__title">Помещение находится на солнечной стороне?</p>
+							<label class="form-checkbox form-checkbox_small">да
+								<input type="checkbox" />
+								<span class="custom__checkbox"></span>
+							</label>
+							<label class="form-checkbox form-checkbox_small">нет
+								<input type="checkbox" />
+								<span class="custom__checkbox"></span>
+							</label>
+							<p class="popup-slide__title">Укажите площадь помещения, м2</p>
+							<input type="text" class="form-input">
+						</div>
+					</form>
+					<form class="popup-slide">
+						<div class="popup-slide__content">
+							<div class="popup-slide__block">
+								<p class="popup-slide__title">Тип кондиционера</p>
+								<label class="form-checkbox">моноблочный
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">сплит-система
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">колонный
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">центральный
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">чиллер-фанкойл
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+							</div>
+						</div>
+					</form>
+					<form class="popup-slide">
+						<div class="popup-slide__block">
+							<p class="popup-slide__title">Оставьте свои контактные данные</p>
+							<div class="form-box">
+								<label for="phone">*Телефон:</label>
+								<input type="text" class="form-input" name="phone" required>
+							</div>
+							<div class="form-box">
+								<label for="email">E-mail:</label>
+								<input type="text" class="form-input" name="email">
+							</div>
+							<div class="form-box">
+								<label for="text">Комментарий (загрузка проекта):</label>
+								<input type="text" class="form-input" name="text">
+								<input type="file" id="file" name="file" class="download-file" multiple>
+								<label for="file"><img src="./static/img/download-icon.png" alt="download-file"></label>
+								<div class="download-file__name"></div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="popup ventilation-popup">
+			<div class="popup__content">
+				<div class="popup-close"></div>
+				<div class="count__slider">
+					<span class="cp">1</span>
+				</div>
+				<div class="popup-slider__prev ventilation-slider__prev"><img src="./static/img/prev-arrow.png" alt="Назад"></div>
+				<div class="popup-slider__next ventilation-slider__next"></div>
+				<p class="popup-title">Расчет вентиляции</p>
+				<div class="popup-slider ventilation-slider">
+					<form class="popup-slide">
+						<div class="popup-slide__content">
+							<div class="popup-slide__block">
+								<p class="popup-slide__title">Назначение</p>
+								<label class="form-checkbox">приточная
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">вытяжная
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+								<label class="form-checkbox">приточно-вытяжная
+									<input type="checkbox" />
+									<span class="custom__checkbox"></span>
+								</label>
+							</div>
+						</div>
+					</form>
+					<form class="popup-slide">
+						<div class="popup-slide__content">
+							<div class="popup-slide__block">
+								<p class="popup-slide__title">*Укажите площадь помещения, м2</p>
+								<input type="text" class="form-input">
+							</div>
+							<div class="popup-slide__block">
+								<p class="popup-slide__title">Укажите количество людей в помещении</p>
+								<input type="text" class="form-input">
+							</div>
+						</div>
+					</form>
+					<form class="popup-slide">
+						<p class="popup-slide__title">Производительность, м³/ч</p>
+						<label class="form-checkbox form-checkbox_big">от 100 до 500 м³/ч (для отдельных комнат и квартир)
+							<input type="checkbox" />
+							<span class="custom__checkbox"></span>
+						</label>
+						<label class="form-checkbox form-checkbox_big">от 500 до 2000 м³/ч (для коттеджей)
+							<input type="checkbox" />
+							<span class="custom__checkbox"></span>
+						</label>
+						<label class="form-checkbox form-checkbox_big">от 1000 до 10000 м³/ч (для офисов и промышленных помещений)
+							<input type="checkbox" />
+							<span class="custom__checkbox"></span>
+						</label>
+					</form>
+					<form class="popup-slide">
+						<p class="popup-slide__title">Оставьте свои контактные данные</p>
+						<div class="form-box">
+							<label for="phone">*Телефон:</label>
+							<input type="text" class="form-input" name="phone" required>
+						</div>
+						<div class="form-box">
+							<label for="email">E-mail:</label>
+							<input type="text" class="form-input" name="email">
+						</div>
+						<div class="form-box">
+							<label for="text">Комментарий (загрузка проекта):</label>
+							<input type="text" class="form-input" name="text">
+							<input type="file" id="file" name="file" class="download-file" multiple>
+							<label for="file"><img src="./static/img/download-icon.png" alt="download-file"></label>
+							<div class="download-file__name"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="popup success-popup">
+			<div class="popup__content">
+				<div class="popup-close"></div>
+				<img src="./static/img/check-bg.png" alt="Успешная отправка">
+				<p>Спасибо! Ваша заявка на расчет отправлена. В ближайшее время с&nbsp;вами свяжемся.</p>
+			</div>
+		</div>
+		<!--  -->
+		<script src="static/js/jquery.js"></script>
+		<script src="static/js/slick.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
