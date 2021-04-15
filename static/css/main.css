@@ -426,6 +426,9 @@ a {
 		width: 52px;
 		right: 0;
 	}
+	.btn-popup {
+		right: -200px;
+	}
 
 	.success-popup p {
 		width: 265px;
