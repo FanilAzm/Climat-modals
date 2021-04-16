@@ -384,7 +384,7 @@ a {
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
 	.popup__content {
 		width: 260px;
 		height: auto;
